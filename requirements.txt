@@ -1,0 +1,11 @@
+numpy
+Flask
+scikit-learn
+joblib
+gunicorn
+Flask-WTF
+wtforms
+pandas
+seaborn
+datetime
+matplotlib

@@ -1,0 +1,339 @@
+    <h1> Here is your Race Goal Table for {{stroke}} in {{distance}}! </h1>  
+
+{%if distance == '200' %}
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First 50 m </th>
+      <th scope="col">Second 50 m </th>
+      <th scope="col">Third 50 m </th>
+      <th scope="col">Fourth 50 m </th>
+      <th scope="col">Total time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{predc3}} Sec</td>
+      <td> {{predc4}} Sec</td>
+      <td> {{predc5}} Sec</td>
+      <td> {{predc6}} Sec</td>
+
+      <td> {{Number}} Sec </td>
+    </tr>
+    
+    </tbody>
+    </table>
+    </div>
+
+    <h1> Here is your Training Table ! </h1>
+<div class="table-responsive">
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Zone </th>
+      <th scope="col">50 m </th>
+      <th scope="col">100 m </th>
+      <th scope="col">200 m </th>
+      <th scope="col">400 m </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>End 1 (Rest Time 10 ~ 30 Sec)</td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.75)))/4)*0.97}} Sec</td>
+      <td class="mm">  {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.75)))/2)*0.97}} Sec </td>
+      <td class="mm"> {{((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.75)))}} Sec </td>
+      <td class="mm"> {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.75)))*2)*0.97}} Sec </td>
+    </tr>
+        <tr>
+      <th scope="row">2</th>
+      <td>End 2 (Rest Time 15 ~ 30 Sec)</td>
+      <td class="mm"> {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.85)))/4)*0.97}} Sec</td>
+      <td class="mm"> {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.85)))/2)*0.97}} Sec </td>
+      <td class="mm">{{(pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.85))}} Sec </td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.85)))*2)*0.97}} Sec </td>
+    </tr>
+              <tr>
+      <th scope="row">3</th>
+      <td>End 3 (Rest Time 30 ~ 60 Sec)</td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.95)))/4)*0.97}} Sec</td>
+      <td class="mm"> {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.95)))/2)*0.97}} Sec </td>
+      <td class="mm"> {{(pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.95))}}Sec </td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.95)))*2)*0.97}} Sec </td>
+    </tr>
+                  <tr>
+      <th scope="row">3</th>
+      <td> Speed1 </td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/4)*0.90}}Sec</td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/2)*0.90}} Sec </td>
+      <td class="mm"> {{(pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999))}} Sec </td>
+      <td class="mm"> {{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))*2)*0.90}} Se  </td>
+    </tr>
+                    <tr>
+      <th scope="row">3</th>
+      <td> Speed 2  </td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/4)*0.90}} Sec</td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/2)*0.90}} Sec </td>
+      <td class="mm"> {{(pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999))}} Sec </td>
+      <td>  </td>
+    </tr>
+                    <tr>
+      <th scope="row">3</th>
+      <td> Speed 3 </td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/4)*0.90}}Sec</td>
+      <td class="mm">{{(((pred3 +pred4 +pred5 + pred6)+((pred3 +pred4 +pred5 + pred6)-((pred3 +pred4 +pred5 + pred6) * 0.999)))/2)*0.90}} Sec </td>
+      <td >  </td>
+      <td>  </td>
+    </tr>
+  </tbody>
+    </table>
+    </div>
+
+{% elif distance == '100' %}
+    <div class="table-responsive">       
+    <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First 50 m </th>
+                  <th scope="col">Second 50 m </th>
+                  <th scope="col">Total time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{predc1}} Sec</td>
+                  <td> {{predc2}} Sec</td>
+                  <td> {{Number}} Sec </td>
+                </tr>
+
+              </tbody>
+                </table>
+            </div>
+
+                <h1> Here is your Training Table ! </h1>
+    <div class="table-responsive">
+            
+    <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Zone </th>
+                  <th scope="col">50 m </th>
+                  <th scope="col">100 m </th>
+                  <th scope="col">200 m </th>
+                  <th scope="col">400 m </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>End 1 (Rest Time 10 ~ 30 Sec)</td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.75)))/2)*0.97}} Sec</td>
+                  
+                  <td class="mm" > {{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.75))}}Sec</td>
+                  
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.75)))*2)*0.97}} Sec </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.75)))*4)*0.97}} Sec </td>
+                </tr>
+                                    <tr>
+                  <th scope="row">2</th>
+                  <td>End 2 (Rest Time 15 ~ 30 Sec)</td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.85)))/2)*0.97}} Sec</td>
+                  
+                  <td class="mm"> {{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.85))}}Sec</td>
+                  
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.85)))*2)*0.97}} Sec </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.85)))*4)*0.97}} Sec </td>
+                </tr>
+                                          <tr>
+                  <th scope="row">3</th>
+                  <td>End 3 (Rest Time 30 ~ 60 Sec)</td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.95)))/2)*0.97}} Sec</td>
+                  
+                  <td class="mm">{{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.95))}} Sec</td>
+                  
+                  <td class="mm">{{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.95)))*2)*0.97}} Sec </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.95)))*4)*0.97}} Sec  </td>
+                </tr>
+                                              <tr>
+                  <th scope="row">4</th>
+                  <td>Speed 1 </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))/2)*0.95}}Sec</td>
+                  
+                  <td class="mm"> {{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999))}}Sec</td>
+                  
+                  <td class="mm">{{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))*2)*0.95}} Sec </td>
+                  <td class="mm">{{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))*4)*0.95}} Sec </td>
+                </tr>
+                                                <tr>
+                  <th scope="row">5</th>
+                  <td>Speed 2 </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))/2)*0.95}} Sec</td>
+                  
+                  <td class="mm">{{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999))}} Sec</td>
+                  
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))*2)*0.95}}Sec </td>
+                  <td> </td>
+                </tr>
+                                                <tr>
+                  <th scope="row">6</th>
+                  <td>Speed 3 </td>
+                  <td class="mm"> {{(((pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999)))/2)*0.95}}Sec</td>
+                  
+                  <td class="mm">{{(pred1+pred2)+((pred1+pred2)-((pred1+pred2)*0.999))}} Sec</td>
+                  
+                  <td> </td>
+                  <td> </td>
+                </tr>
+              </tbody>
+            </table>                   
+        </div>
+
+{% elif distance == '400' %}
+            <div class="table-responsive">
+
+                    <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">1st 50 m </th>
+                  <th scope="col">2nd 50 m </th>
+                  <th scope="col">3rd 50 m </th>
+                  <th scope="col">4th 50 m </th>
+                  <th scope="col">5th 50 m </th>
+                  <th scope="col">6th 50 m </th>
+                  <th scope="col">7th 50 m </th>
+                  <th scope="col">8th 50 m </th>
+                  <th scope="col">Total time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{predc7}} Sec</td>
+                  <td> {{predc8}} Sec</td>
+                    <td>{{predc9}} Sec</td>
+                  <td> {{predc10}} Sec</td>
+                    <td>{{predc11}} Sec</td>
+                  <td> {{predc12}} Sec</td>
+                    <td>{{predc13}} Sec</td>
+                  <td> {{predc14}} Sec</td>
+                  <td> {{Number}} Sec </td>
+                </tr>
+
+              </tbody>
+                </table>
+                    </div>
+
+                <h1> Here is your Training Table ! </h1>
+        <div class="table-responsive">
+       
+        <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Zone </th>
+                  <th scope="col">50 m </th>
+                  <th scope="col">100 m </th>
+                  <th scope="col">200 m </th>
+                  <th scope="col">400 m </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>End 1 (Rest Time 10 ~ 30 Sec)</td>
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.75)))/8)*0.97}} Sec</td>
+                  
+                  <td class="mm" > {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.75)))/4)*0.97}}Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.75)))/2)*0.97}} Sec </td>
+                  <td class="mm"> {{(pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.75))}} Sec </td>
+                </tr>
+                                    <tr>
+                  <th scope="row">2</th>
+                  <td>End 2 (Rest Time 15 ~ 30 Sec)</td>
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.85)))/8)*0.97}} Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.85)))/4)*0.97}} Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.85)))/2)*0.97}}  Sec </td>
+                  <td class="mm"> {{(pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.85))}} Sec </td>
+                </tr>
+                                          <tr>
+                  <th scope="row">3</th>
+                  <td>End 3 (Rest Time 30 ~ 60 Sec)</td>
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.95)))/8)*0.97}}Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.95)))/4)*0.97}} Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.95)))/2)*0.97}} Sec </td>
+                  <td class="mm">{{(pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.68))}}  Sec  </td>
+                </tr>
+                                              <tr>
+                  <th scope="row">4</th>
+                  <td>Speed 1 </td>
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/8)*0.92}} Sec</td>
+                  
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/4)*0.92}} Sec</td>
+                  
+                  <td class="mm"> {{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/2)*0.92}} Sec </td>
+                  <td class="mm"> {{(pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999))}} Sec </td>
+                </tr>
+                                                <tr>
+                  <th scope="row">5</th>
+                  <td>Speed 2 </td>
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/8)*0.92}} Sec</td>
+                  
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/4)*0.92}} Sec</td>
+                  
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/2)*0.92}} Sec </td>
+                  <td> </td>
+                </tr>
+                                                <tr>
+                  <th scope="row">6</th>
+                  <td>Speed 3 </td>
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/8)*0.92}}Sec</td>
+                  
+                  <td class="mm">{{(((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)+((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)-((pred7+pred8+pred9+pred10+pred11+pred12+pred13+pred14)*0.999)))/4)*0.92}} Sec</td>
+                  
+                  <td> </td>
+                  <td> </td>
+                </tr>
+              </tbody>                   
+                </table>        
+            </div>
+
+{% endif %}
+
+
+<script> 
+    function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+}    
+    var x = document.getElementsByClassName("mm");
+        var i ; 
+        for (i =0 ; i< x.length; i++) {
+            value= x[i].innerHTML ;
+            const sec = parseFloat(value, 10); // convert value to number if it's string
+            let hours   = Math.floor(sec / 3600); // get hours
+            let minutes = Math.floor((sec - (hours * 3600)) / 60); // get minutes
+            let seconds = (sec - (hours * 3600) - (minutes * 60)); //  get seconds
+            seconds = round(seconds,2)
+            // add 0 if value < 10; Example: 2 => 02
+            if (hours   < 10) {hours   = "0"+hours;}
+            if (minutes < 10) {minutes = "0"+minutes;}
+            if (seconds < 10) {seconds = "0"+seconds;}
+            forrr = minutes+':'+(seconds);
+            x[i].innerHTML = forrr;
+    }
+</script>
